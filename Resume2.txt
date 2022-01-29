@@ -1,0 +1,56 @@
+Dimanche 19/08/08
+
+Login> tamim2014/andjib2019
+
+
+Link> https://github.com/tamim2014/base5.git
+----------------------------------------------------------------------
+DEPOSER MON PROJET SUR UN DEPOT DISTANT 
+
+1. Comment creer un depot sur GitHup(depot distant)?
+
+         https://github.com/new
+
+2. Comment Exporter un projet vers ce depot?
+
+2.1 Il faut creer un depot local pour le projet. Et le connecter avec le depot distant en tapant les commandes suivantes
+        git remote add origin https://github.com/tamim2014/base5.git
+2.2 Verifier si le depot distant est bien connecte?
+        git remote
+2.3 Exporter le projet
+        git push [-u] depot_local  branche_a_deposer
+        Exemple:
+        git push  origin master
+---------------------------------------------------------------------
+ DEPOT LOCAL ?
+Se positionner sur le projet puis:
+>mkdir stage
+>cd stage/
+>git init
+Copier/coller le projet dans le dossier stage, faire les "git add" et commiter
+--------------------------------------------------------------
+ BRANCHE ?
+
+$ git branch blem1     --------- un nouveau branche appele blem1
+$ git checkout  blem1  --------- se positionner sur blem1
+-------------------------------------------------------------
+VALIDER DES MODIF
+
+$git commit -a -m "Responsive:dimention relatifs et non fixes"
+------------------------------------------------------------
+FUSIONNER blem1 AVEC LA BRANCHE   master  ( APRES LES TEST )
+
+$ git checkout master
+$ git merge blem1
+---------------------------------
+SUPPRIMER LA BRANCHE blem1 ( APRES LA FUSION )
+
+$ git branch -d blem1
+______________________________________
+
+ATTENTION!!!!!!!!!!!!!!!!!!!Conflits de fusion : CONFLICT (content): Merge conflict
+ Si vous avez modifié différemment la même partie du même fichier dans les deux branches que vous souhaitez fusionner,
+ Git ne sera pas capable de réaliser proprement la fusion.
+
+
+   

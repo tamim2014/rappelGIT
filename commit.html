@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"><!-- responsive -->
+	<title>Rappels javascripts</title>
+	<link rel="stylesheet" href="css/test3-zoning.css" >
+	<link rel="stylesheet" href="css/test3-dropdown.css" >
+	<link rel="stylesheet" href="css/sticky.css">
+    <style>		
+		.R{color:#990033; font-weight:bold; }
+		.idR{
+			color:#115; 
+			border:1px solid #8c8b8b; 
+			padding:1px 4px; 
+			border-radius:3px;
+			box-shadow:2px 2px 0.5px 0.5px #8c8b8b; 
+		}
+		.idS{
+			border:1px solid #8c8b8b; 
+			padding:1px 4px; 
+			border-radius:3px;
+			box-shadow:2px 2px 0.5px 0.5px #8c8b8b; 
+		}
+		ol{
+			line-height: 2em;
+		}
+		.onglet1-sujet { 
+		
+		  float: left; 
+		  width:87%;
+		  height: 90% ;  
+		  padding:20px;
+		  margin:2.5% 6.5%;
+		  background-color:#555;   
+		  box-shadow:
+			0px 2px 2px 0px rgba(0, 0, 0, 0.5) inset,
+			0px 2px 2px 0px rgba(255, 255, 255, 0.5);
+		  border:1px solid #8c8b8b;
+		  border-radius: 0px;  
+		}
+
+    </style>	
+</head>
+<body>
+
+	<div id="entete"></div>
+	<div id="menu">
+		<a href="index.html" style="background-color: #111; color:#ECECEA;">Accueil</a>
+		<a href="branch.html">Branch</a>
+		<a href="commit.html">Commit</a>
+		<a href="depotdistant.html">Dépôt distant</a>
+		
+		<div class="dropdown">
+			<button class="dropdown-btn">Divers rappels</button>
+			<div class="dropdown-content">
+			    <a href="rappels-linux.html">Linux</a>
+			    <a href="interfaces-js.html" >DOM</a>						
+			</div>
+		</div>
+	</div>
+	<div id="contenu">
+		<div class="colone-laterale" id="sidbarG">
+			<p class="paragraphe">
+					&#9203; Début:20h<br>
+					&#8987; Fin HTML: 20h10<br>
+					&#8987; Fin CSS et test:21h05 <br>
+				
+					&#9200; Durée totale: 55mn
+			</p>
+		</div>
+		
+		<div class="colone-contenu" id="contenu_">
+		    <h2 class="grosTitre"><span class="box-shadow-titre" > Commit </span></h2>
+
+			<div class="planche" >
+			    <h1 style="margin-left:0.8em;" >Recapitulatif</h1>
+	            <img src="img/recapitulatif.png" class="onglet1-sujet " style=" margin-top:-1em;"/>
+			</div>
+			<p style="margin-top:3em;"></p>
+			<p class="paragraphe " style="padding-left:1.5em;padding-bottom:2em ; background:#bbb;" >
+			   <span style="color:#115; "><br>
+			        Mise à jour de code( sans nouveau fichier):<br>
+				    On saute l'étape2. On le remplace par l'option <b style="color:#990033; font-size:1.2em;"> -a</b><br>
+			         <span class="idS" > git commit <b style="color:#990033; font-size:1.2em;"> -a</b>&nbsp; -m "blabla" </span> &nbsp; ou &nbsp; 
+				    <span class="idS" > git commit <b style="color:#990033; font-size:1.2em; "> -a</b>m "blabla" </span>
+			    </span>
+			</p>
+			
+			
+			<div class="plancheCadre "  >
+			    <details>
+			        <summary style="margin-left:0.2em; font-size:2em">Lister les commit ?</summary>
+				    <p class="paragraphe">
+                       <b style="font-size:2em;">git  <span style="color:red">&nbsp; log</span>&nbsp;   </b>
+			        </p>
+				   &nbsp; Pour quitter le log taper: <b style="font-size:1.2em; color:#990033;">Q</b>
+			    </details>
+			</div>
+            <p class="boiteGris" style="height:16em;" ></p>			
+			<div class="plancheCadre" >
+			    <details>
+			        <summary style="margin-left:0.2em; font-size:2em ">Aller sur un commit ?</summary>
+				    <p class="paragraphe">
+                       <b style="font-size:2em;">git  <span style="color:red">&nbsp; checkout</span>&nbsp;   <small style="font-weight:normal">SHADuCommit</small></b>
+			        </p>
+		        </details>
+			</div>	
+			<p class="boiteGris" style="height:17em;" ></p>			
+			
+			<div class="plancheCadre" >
+			    <details>
+			         <summary style="margin-left:0.2em; font-size:2em; ">Revenir à votre branche <br>&emsp; principale <small style="font-weight:normal; font-size:0.6em;">(au commit le plus récent)</small></summary>
+				     <p class="paragraphe">
+                        <b style="font-size:2em;">git  <span style="color:red">&nbsp; checkout</span>&nbsp;   <small style="font-weight:normal">master</small></b>
+			         </p>
+				</details>
+			</div>
+			<p class="boiteGris" style="height:18em; " ></p>	
+			
+
+			
+			<div class="plancheCadre" >
+			    <details>
+			         <summary style="margin-left:0.2em; font-size:2em; ">Renommer un commit ?</summary>
+                     <p class="paragraphe">
+                         <b style="font-size:2em;">git commit <span style="color:red">&nbsp; --amend</span>&nbsp; -m  <small style="font-weight:normal">"nouveau message"</small></b>
+                     </p>
+				</details>
+			</div>
+			<p class="boiteGris" style="height:18em; " ></p>
+			
+			<div class="plancheCadre" >
+			    <details>
+			         <summary style="margin-left:0.2em; font-size:2em; ">Annuler un commit ? <br> &emsp; (après un push)</summary>
+				     <p class="paragraphe">
+                       <b style="font-size:2em;">git  <span style="color:red">&nbsp; revert</span>&nbsp;   <small style="font-weight:normal">numero</small></b>
+			         </p>
+				</details>
+			</div>
+			<p class="boiteGris" style="height:18em; " ></p>
+			
+			<div class="plancheCadre" >
+			    <details>
+			         <summary style="margin-left:0.2em; font-size:2em; ">Annuler les 3 derniers<br> &emsp; commits</summary>
+				     <p class="paragraphe">
+                          <b style="font-size:2em;">git  <span style="color:red">&nbsp; revert</span>&nbsp;   <small style="font-weight:normal">HEAD~3</small><span style="color:#990099">..HEAD</span></b>
+			         </p>
+				</details>
+			</div>
+			<p class="boiteGris" style="height:20em; " ></p>
+			
+			<div class="plancheCadre" >
+			    <details>
+			         <summary style="margin-left:0.2em; font-size:2em; ">Annuler les changements<br> &emsp; non commités</summary>
+				     <p class="paragraphe">
+                         <b style="font-size:2em;">git  <span style="color:red">&nbsp; reset</span>&nbsp;   <span style="color:#990099">--hard</span></b>
+			         </p>
+			     </details>
+			</div>
+			<p class="boiteGris" style="height:18em; " ></p>
+			
+			<div class="plancheCadre" >
+			    <h1 style="margin-left:0.2em; ">Bibliographie:</h1>
+				<p class="paragraphe">
+                  <b style="font-size:2em;"> <a href="https://www.journaldunet.fr/web-tech/developpement/1202943-effacer-une-branche-git-a-la-fois-locale-et-distante/">JDN</a></b>
+			    </p>
+				<p class="paragraphe">
+                  <b style="font-size:2em;"> <a href="https://openclassrooms.com/fr/courses/2342361-gerez-votre-code-avec-git-et-github/2433586-quest-ce-que-versionner-son-code">Open Class room</a></b>
+			    </p>
+			</div>
+			<p class="boiteGris" style="height:22em; " ></p>
+			
+			
+					
+		</div><!-- #colone-contenu -->
+		
+	
+		
+		<div class="colone-laterale" id="sidbarD" >
+			<p class="paragraphe" style="background:#8c8b81" >
+					&#9203; Début:20h<br>
+					&#8987; Fin HTML: 20h10<br>
+					&#8987; Fin CSS et test:21h05 <br>
+				
+					&#8986; Durée totale: 55mn
+			</p>
+		</div>
+	</div>
+	<div style="clear:both"></div>
+	<div id="footer" >
+		<table class="footer-table" >
+		  <tr>
+			 <td class="footer-td" style="width:20%;">
+				 <span style="color:#f7f7f9;" >&#8718; Proprierés:</span><br>
+				 &emsp;&bull; offsetTop<br>
+				 &emsp;&bull; pageYOffset<br>
+				 <span style="color:#f7f7f9;" >&#8718; Méthodes:</span><br>
+				 &emsp;&bull; classList.add();<br>
+				 &emsp;&bull; classList.toggle();		 
+			 </td>
+			 
+			 <td class="footer-td" style="width:20%;">
+				 <span style="color:#f7f7f9;" >&#8718; Proprierés:</span><br>
+				 &emsp;&bull; offsetTop<br>
+				 &emsp;&bull; pageYOffset<br>
+				 <span style="color:#f7f7f9;" >&#8718; Méthodes:</span><br>
+				 &emsp;&bull; classList.add();<br>
+				 &emsp;&bull; classList.toggle();		 
+			 </td>
+
+			 <td class="footer-td" style="width:20%;" >
+				 <span style="color:#f7f7f9;" >&#8718; Proprierés:</span><br>
+				 &emsp;&bull; offsetTop<br>
+				 &emsp;&bull; pageYOffset<br>
+				 <span style="color:#f7f7f9;" >&#8718; Méthodes:</span><br>
+				 &emsp;&bull; classList.add("newClassName");<br>
+				 &emsp;&bull; classList.toggle("newClassName");		 
+			 </td>
+		
+		  </tr>
+		</table>
+	</div><!-- #footer -->
+    <script type="text/javascript" src="js/sticky.js"></script>
+</body>
+</html>
